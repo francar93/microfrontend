@@ -1,1 +1,3 @@
-.history/
+.history/*
+01-links/docs/build/*
+/.idea/*
