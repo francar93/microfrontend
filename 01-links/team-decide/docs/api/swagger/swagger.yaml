@@ -1,0 +1,35 @@
+swagger: "2.0"
+info:
+  title: Sceda film
+  description: bla bla bla
+  termsOfService: http://swagger.io/term
+  version: 1.0.0
+host: 127.0.0.1:90
+basePath: /
+schemes:
+  - http
+paths:
+  /filmList:
+    get:
+      summary: Get film list
+      responses:
+        200:
+          description: OK
+  /film/{id}:
+    get:
+      summary: Get film details
+      parameters:
+        - in: path
+          name: id
+          type: number
+          required: true
+          description: Numeric ID of the film to get
+      responses:
+        200:
+          description: OK
+        404:
+          description: NOT FOUND
+
+
+# comando da lanciare per generare il file
+# swagger project edit

@@ -1,0 +1,29 @@
+swagger: "2.0"
+info:
+  title: secondo swagger inutile
+  description: bla bla bla
+  termsOfService: http://swagger.io/term
+  version: 1.0.0
+host: 127.0.0.1:90
+basePath: /
+schemes:
+  - http
+paths:
+  /filmSuggeriti/{id}:
+    get:
+      summary: Get film suggeriti
+      parameters:
+        - in: path
+          name: i
+          type: number
+          required: true
+          description: Numeric ID of the film
+      responses:
+        200:
+          description: OK
+        404:
+          description: NOT FOUND
+
+
+# comando da lanciare per generare il file
+# swagger project edit

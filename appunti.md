@@ -11,3 +11,11 @@ da approfondire api web https://developer.mozilla.org/it/docs/Web/API
 https://babeljs.io/
 
 i microfrontend NON sono una tecnlogia, ma un approccio organizzativo e archittetturale 
+
+
+per lanciare il docker-compose come segue (-d è per lanciarlo come demnone e lascia libera la comnsole )
+
+ 
+`
+docker-compose up -d
+`
